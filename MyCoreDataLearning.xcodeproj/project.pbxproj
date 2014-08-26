@@ -9,11 +9,10 @@
 /* Begin PBXBuildFile section */
 		D3C0574319AAE74200B2506D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C0574219AAE74200B2506D /* main.m */; };
 		D3C0574619AAE74200B2506D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C0574519AAE74200B2506D /* AppDelegate.m */; };
-		D3C0574919AAE74200B2506D /* MyCoreDataLearning.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3C0574719AAE74200B2506D /* MyCoreDataLearning.xcdatamodeld */; };
-		D3C0574C19AAE74200B2506D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C0574B19AAE74200B2506D /* ViewController.m */; };
 		D3C0574F19AAE74200B2506D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C0574D19AAE74200B2506D /* Main.storyboard */; };
 		D3C0575119AAE74200B2506D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C0575019AAE74200B2506D /* Images.xcassets */; };
 		D3C0575D19AAE74200B2506D /* MyCoreDataLearningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C0575C19AAE74200B2506D /* MyCoreDataLearningTests.m */; };
+		D3F23EB819AC86C600DE4523 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3F23EB619AC86C600DE4523 /* Main.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +31,12 @@
 		D3C0574219AAE74200B2506D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D3C0574419AAE74200B2506D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D3C0574519AAE74200B2506D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D3C0574819AAE74200B2506D /* MyCoreDataLearning.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCoreDataLearning.xcdatamodel; sourceTree = "<group>"; };
-		D3C0574A19AAE74200B2506D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D3C0574B19AAE74200B2506D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D3C0574E19AAE74200B2506D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3C0575019AAE74200B2506D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D3C0575619AAE74200B2506D /* MyCoreDataLearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCoreDataLearningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C0575B19AAE74200B2506D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3C0575C19AAE74200B2506D /* MyCoreDataLearningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCoreDataLearningTests.m; sourceTree = "<group>"; };
+		D3F23EB719AC86C600DE4523 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +80,10 @@
 			children = (
 				D3C0574419AAE74200B2506D /* AppDelegate.h */,
 				D3C0574519AAE74200B2506D /* AppDelegate.m */,
-				D3C0574A19AAE74200B2506D /* ViewController.h */,
-				D3C0574B19AAE74200B2506D /* ViewController.m */,
 				D3C0574D19AAE74200B2506D /* Main.storyboard */,
 				D3C0575019AAE74200B2506D /* Images.xcassets */,
-				D3C0574719AAE74200B2506D /* MyCoreDataLearning.xcdatamodeld */,
 				D3C0574019AAE74200B2506D /* Supporting Files */,
+				D3F23EB619AC86C600DE4523 /* Main.xcdatamodeld */,
 			);
 			path = MyCoreDataLearning;
 			sourceTree = "<group>";
@@ -220,8 +215,7 @@
 			files = (
 				D3C0574619AAE74200B2506D /* AppDelegate.m in Sources */,
 				D3C0574319AAE74200B2506D /* main.m in Sources */,
-				D3C0574C19AAE74200B2506D /* ViewController.m in Sources */,
-				D3C0574919AAE74200B2506D /* MyCoreDataLearning.xcdatamodeld in Sources */,
+				D3F23EB819AC86C600DE4523 /* Main.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +402,7 @@
 				D3C0576219AAE74200B2506D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3C0576319AAE74200B2506D /* Build configuration list for PBXNativeTarget "MyCoreDataLearningTests" */ = {
 			isa = XCConfigurationList;
@@ -416,17 +411,18 @@
 				D3C0576519AAE74200B2506D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D3C0574719AAE74200B2506D /* MyCoreDataLearning.xcdatamodeld */ = {
+		D3F23EB619AC86C600DE4523 /* Main.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D3C0574819AAE74200B2506D /* MyCoreDataLearning.xcdatamodel */,
+				D3F23EB719AC86C600DE4523 /* Main.xcdatamodel */,
 			);
-			currentVersion = D3C0574819AAE74200B2506D /* MyCoreDataLearning.xcdatamodel */;
-			path = MyCoreDataLearning.xcdatamodeld;
+			currentVersion = D3F23EB719AC86C600DE4523 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
