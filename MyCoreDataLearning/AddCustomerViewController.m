@@ -46,4 +46,18 @@
 }
 */
 
+- (IBAction)btnSavePressed:(id)sender {
+    
+    id delegate = [[UIApplication sharedApplication] delegate];
+    
+    NSManagedObjectContext* moc = [delegate managedObjectContext];
+    
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:[NSEntityDescription entityForName:@"Customer" inManagedObjectContext:moc]];
+    
+    NSArray* customers = [moc executeFetchRequest:request error:nil];
+    
+    NSLog(@"%@", customers);
+    
+}
 @end

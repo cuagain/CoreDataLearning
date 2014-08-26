@@ -108,11 +108,19 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnSavePressed:" destination="fCO-75-90x" eventType="touchUpInside" id="91p-fr-DDF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Customer" id="ROG-dq-arq"/>
+                    <connections>
+                        <outlet property="txtCustomerAddress" destination="lQq-CA-A4I" id="nvf-fR-3YT"/>
+                        <outlet property="txtCustomerId" destination="Qaz-Xa-eba" id="qYy-aZ-ATJ"/>
+                        <outlet property="txtCustomerName" destination="yjb-h4-Q7W" id="sHZ-gG-c4f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FL6-pt-141" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

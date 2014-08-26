@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
 @interface AddCustomerViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UITextField *txtCustomerId;
+@property (weak, nonatomic) IBOutlet UITextField *txtCustomerName;
+@property (weak, nonatomic) IBOutlet UITextField *txtCustomerAddress;
+- (IBAction)btnSavePressed:(id)sender;
 
 @end
