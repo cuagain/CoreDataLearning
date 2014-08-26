@@ -12,6 +12,7 @@
 		D3C0574F19AAE74200B2506D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C0574D19AAE74200B2506D /* Main.storyboard */; };
 		D3C0575119AAE74200B2506D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C0575019AAE74200B2506D /* Images.xcassets */; };
 		D3C0575D19AAE74200B2506D /* MyCoreDataLearningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C0575C19AAE74200B2506D /* MyCoreDataLearningTests.m */; };
+		D3C3E59519AC8C27001CC61C /* AddCustomerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C3E59419AC8C27001CC61C /* AddCustomerViewController.m */; };
 		D3F23EB819AC86C600DE4523 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3F23EB619AC86C600DE4523 /* Main.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,8 @@
 		D3C0575619AAE74200B2506D /* MyCoreDataLearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCoreDataLearningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C0575B19AAE74200B2506D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3C0575C19AAE74200B2506D /* MyCoreDataLearningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCoreDataLearningTests.m; sourceTree = "<group>"; };
+		D3C3E59319AC8C27001CC61C /* AddCustomerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomerViewController.h; sourceTree = "<group>"; };
+		D3C3E59419AC8C27001CC61C /* AddCustomerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomerViewController.m; sourceTree = "<group>"; };
 		D3F23EB719AC86C600DE4523 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,10 +83,10 @@
 			children = (
 				D3C0574419AAE74200B2506D /* AppDelegate.h */,
 				D3C0574519AAE74200B2506D /* AppDelegate.m */,
-				D3C0574D19AAE74200B2506D /* Main.storyboard */,
+				D3C3E59619AC8C31001CC61C /* View Controllers */,
+				D3C3E59719AC8C41001CC61C /* Resources */,
 				D3C0575019AAE74200B2506D /* Images.xcassets */,
 				D3C0574019AAE74200B2506D /* Supporting Files */,
-				D3F23EB619AC86C600DE4523 /* Main.xcdatamodeld */,
 			);
 			path = MyCoreDataLearning;
 			sourceTree = "<group>";
@@ -112,6 +115,24 @@
 				D3C0575B19AAE74200B2506D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3C3E59619AC8C31001CC61C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D3C3E59319AC8C27001CC61C /* AddCustomerViewController.h */,
+				D3C3E59419AC8C27001CC61C /* AddCustomerViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D3C3E59719AC8C41001CC61C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0574D19AAE74200B2506D /* Main.storyboard */,
+				D3F23EB619AC86C600DE4523 /* Main.xcdatamodeld */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C3E59519AC8C27001CC61C /* AddCustomerViewController.m in Sources */,
 				D3C0574619AAE74200B2506D /* AppDelegate.m in Sources */,
 				D3C0574319AAE74200B2506D /* main.m in Sources */,
 				D3F23EB819AC86C600DE4523 /* Main.xcdatamodeld in Sources */,
@@ -283,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -318,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -331,6 +353,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MyCoreDataLearning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -342,6 +365,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MyCoreDataLearning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
