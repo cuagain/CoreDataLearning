@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="605" y="181"/>
         </scene>
-        <!--View Controller - Add Customer-->
+        <!--Add Customer View Controller - Add Customer-->
         <scene sceneID="mYC-ox-xLD">
             <objects>
-                <viewController id="fCO-75-90x" sceneMemberID="viewController">
+                <viewController id="fCO-75-90x" customClass="AddCustomerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eAb-qa-4nM"/>
                         <viewControllerLayoutGuide type="bottom" id="6Vc-LL-UT7"/>
