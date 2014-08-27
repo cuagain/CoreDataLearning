@@ -12,7 +12,8 @@
 		D3C0574F19AAE74200B2506D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C0574D19AAE74200B2506D /* Main.storyboard */; };
 		D3C0575119AAE74200B2506D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C0575019AAE74200B2506D /* Images.xcassets */; };
 		D3C0575D19AAE74200B2506D /* MyCoreDataLearningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C0575C19AAE74200B2506D /* MyCoreDataLearningTests.m */; };
-		D3C3E59519AC8C27001CC61C /* AddCustomerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C3E59419AC8C27001CC61C /* AddCustomerViewController.m */; };
+		D3C3E59A19AC9EA4001CC61C /* AddCustomerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C3E59919AC9EA4001CC61C /* AddCustomerViewController.m */; };
+		D3C3E59D19ACA519001CC61C /* CustomerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C3E59C19ACA519001CC61C /* CustomerTableViewController.m */; };
 		D3F23EB819AC86C600DE4523 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3F23EB619AC86C600DE4523 /* Main.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +38,10 @@
 		D3C0575619AAE74200B2506D /* MyCoreDataLearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCoreDataLearningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C0575B19AAE74200B2506D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3C0575C19AAE74200B2506D /* MyCoreDataLearningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCoreDataLearningTests.m; sourceTree = "<group>"; };
-		D3C3E59319AC8C27001CC61C /* AddCustomerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomerViewController.h; sourceTree = "<group>"; };
-		D3C3E59419AC8C27001CC61C /* AddCustomerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomerViewController.m; sourceTree = "<group>"; };
+		D3C3E59819AC9EA4001CC61C /* AddCustomerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomerViewController.h; sourceTree = "<group>"; };
+		D3C3E59919AC9EA4001CC61C /* AddCustomerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomerViewController.m; sourceTree = "<group>"; };
+		D3C3E59B19ACA519001CC61C /* CustomerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerTableViewController.h; sourceTree = "<group>"; };
+		D3C3E59C19ACA519001CC61C /* CustomerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerTableViewController.m; sourceTree = "<group>"; };
 		D3F23EB719AC86C600DE4523 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,8 +123,10 @@
 		D3C3E59619AC8C31001CC61C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D3C3E59319AC8C27001CC61C /* AddCustomerViewController.h */,
-				D3C3E59419AC8C27001CC61C /* AddCustomerViewController.m */,
+				D3C3E59819AC9EA4001CC61C /* AddCustomerViewController.h */,
+				D3C3E59919AC9EA4001CC61C /* AddCustomerViewController.m */,
+				D3C3E59B19ACA519001CC61C /* CustomerTableViewController.h */,
+				D3C3E59C19ACA519001CC61C /* CustomerTableViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -234,9 +239,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3C3E59519AC8C27001CC61C /* AddCustomerViewController.m in Sources */,
+				D3C3E59A19AC9EA4001CC61C /* AddCustomerViewController.m in Sources */,
 				D3C0574619AAE74200B2506D /* AppDelegate.m in Sources */,
 				D3C0574319AAE74200B2506D /* main.m in Sources */,
+				D3C3E59D19ACA519001CC61C /* CustomerTableViewController.m in Sources */,
 				D3F23EB819AC86C600DE4523 /* Main.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
