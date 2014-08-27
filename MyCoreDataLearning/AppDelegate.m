@@ -21,6 +21,60 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+   
+    NSManagedObjectContext *moc = [self managedObjectContext];
+    
+    NSManagedObject* newCustomer = [NSEntityDescription insertNewObjectForEntityForName:@"Customer" inManagedObjectContext:moc];
+    
+    [newCustomer setValue:@6 forKey:@"id"];
+    [newCustomer setValue:@"Customer 6" forKey:@"name"];
+    [newCustomer setValue:@"Address 666" forKey:@"address"];
+    
+    NSManagedObject* newCustomer2 = [NSEntityDescription insertNewObjectForEntityForName:@"Customer" inManagedObjectContext:moc];
+    
+    [newCustomer2 setValue:@7 forKey:@"id"];
+    [newCustomer2 setValue:@"Customer 7" forKey:@"name"];
+    [newCustomer2 setValue:@"Address 777" forKey:@"address"];
+    
+    NSError *mocSaveError = nil;
+    
+    if (![moc save:&mocSaveError])
+    {
+        NSLog(@"Save did not complete successfully. Error: %@", [mocSaveError localizedDescription]);
+    }
+    
+    if ([moc hasChanges])
+    {
+        NSLog(@"data was changed");
+    }
+
+    
+    NSLog(@"%@", newCustomer);
+    
+
+    
+    NSFetchRequest *fetchReq = [[NSFetchRequest alloc] init];
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Customer" inManagedObjectContext:moc];
+    
+    [fetchReq setEntity:entity];
+    
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+    
+    NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor, nil];
+    
+    [fetchReq setSortDescriptors:sortDescriptors];
+    [fetchReq setReturnsObjectsAsFaults:NO];
+    
+    NSError* error;
+    
+    NSArray* data = [moc executeFetchRequest:fetchReq error:&error];
+    
+    NSLog(@"%@", data);
+    
+    //ZAssert([frc performFetch:&error], @"Unresolved error %@\n%@", [error localizedDescription], [error userInfo]);
+    
+    
     return YES;
 }
 
